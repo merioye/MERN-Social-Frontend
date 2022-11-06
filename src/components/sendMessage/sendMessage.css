@@ -1,0 +1,227 @@
+.message-send-area{
+    height: 45px;
+    width: 100%;
+    /* background: #ededed; */
+    /* border: 1px solid red; */
+    padding: 0px 20px;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+}
+.message-input-container{
+    height: 100%;
+    width: calc(100% - 60px);
+    border-radius: 25px;
+    position: relative;
+}
+.message-input-container form{
+    height: 100%;
+    width: 100%;
+}
+.message-input-container form .message-text-input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding-left: 55px;
+    font-size: 1.1rem;
+    background: #EBEDF0;
+}
+.message-input-container form .message-text-input::placeholder{
+    color: #54656f;
+    font-size: 1.1rem;
+}
+.message-input-container form i{
+    position: absolute;
+    left: 10px;
+    top:4px;
+    font-size: 1.4rem;
+    padding: 7px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.3s;
+    color: #1B74E4;
+}
+.message-input-container form i:hover{
+    background: #d1e1ff;
+}
+.message-input-container form svg{
+    position: absolute;
+    right: 15px;
+    top: 11px;
+    cursor: pointer;
+    color: #1B74E4;
+}
+.message-input-container form .message-file-input{
+    position: absolute;
+    right: 15px;
+    top: 11px;
+    height: 24px;
+    width: 24px;
+    border: 1px solid green;
+    cursor: pointer;
+    opacity: 0;
+}
+
+
+/* ########## */
+
+.message-input-container .message-text-input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding-left: 55px;
+    font-size: 1.1rem;
+    background: #EBEDF0;
+}
+.message-input-container .message-text-input::placeholder{
+    color: #54656f;
+    font-size: 1.1rem;
+}
+.message-input-container i{
+    position: absolute;
+    left: 10px;
+    top:4px;
+    font-size: 1.4rem;
+    padding: 7px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.3s;
+    color: #1B74E4;
+}
+.message-input-container i:hover{
+    background: #d1e1ff;
+}
+.message-input-container svg{
+    position: absolute;
+    right: 15px;
+    top: 11px;
+    cursor: pointer;
+    color: #1B74E4;
+}
+.message-input-container .message-file-input{
+    position: absolute;
+    right: 15px;
+    top: 11px;
+    height: 24px;
+    width: 24px;
+    border: 1px solid green;
+    cursor: pointer;
+    opacity: 0;
+}
+
+/* ########### */
+
+
+
+.message-send-area .msg-snd-btn{
+    height: 100%;
+    width: 45px;
+    margin-left: 15px;
+    border-radius: 50%;
+    padding-left: 6px;
+    padding-top: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0px 0px 20px -8px black;
+    background: #1B74E4;
+}
+.message-send-area .msg-mic-btn{
+    height: 100%;
+    width: 45px;
+    margin-left: 15px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    box-shadow: 0px 0px 20px -8px black;
+    background: #1B74E4;
+}
+
+
+
+
+
+
+
+
+.audio-message-recording-wrapper{
+    height: 100%;
+    width: calc(100% - 60px);
+    background: #EBEDF0;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px -15px black;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 30px;
+}
+.audio-message-recording{
+    height: 100%;
+    width: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    color: #54656f;
+    font-size: 1.2rem;
+    font-weight: 450;
+}
+.audio-cancel-btn{
+    font-size: 1.4rem;
+    color: #54656f;
+    padding: 7px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.3s;
+    margin-right: 15px;
+    background-color: #EBEDF0;
+}
+.audio-cancel-btn:hover{
+    color: red;
+}
+.red-mic-icon{
+    color: red;
+    font-size: 1.4rem;
+    margin-left: 23px;
+    animation-name: animate-mic;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes animate-mic{
+    0%{opacity:0}
+    50%{opacity:1}
+    70%{opacity:1}
+    100%{opacity:0}
+}
+
+
+.voice-snd-btn{
+    height: 100%;
+    width: 45px;
+    margin-left: 15px;
+    border-radius: 50%;
+    padding-left: 6px;
+    padding-top: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0px 0px 20px -8px black;
+    background: #1B74E4;
+}

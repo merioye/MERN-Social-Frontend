@@ -1,0 +1,63 @@
+.image-upload-box{
+    width: 100%;
+    height: 300px;
+    border: 2px dashed grey;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #EBEDF0;
+}
+
+
+.drag-and-drop-icon{
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.drag-and-drop-icon img{
+    height: 100%;
+    width: 100%;
+}
+.fileInput{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.image-upload-box h3{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.preview-image{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+/* ################ Responsive style ################# */
+@media only screen and (max-width:470px){
+    .image-upload-box{
+        height: 200px;
+    }
+    .drag-and-drop-icon{
+        margin-top: 10px;
+    }
+    .image-upload-box h3{
+        margin-top: 20px;
+    }
+}

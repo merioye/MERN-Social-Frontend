@@ -1,0 +1,114 @@
+.conversation-message-wrapper{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid green; */
+    margin-bottom: 10px;
+    display: flex;
+}
+.conversation-message{
+    height: auto;
+    max-width: 60%;
+    background: #EBEDF0;
+    display: inline-block;
+    padding: 8px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    --T68779821: 0 1px 2px rgba(0, 0, 0, 0.2);
+    /* background: #f3f7ff; */
+    text-align: center;
+}
+.conversation-message .message-indicator{
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    height: 10px;
+    width: 15px;
+    background: #EBEDF0;
+    transform: skew(40deg);
+}
+.conversation-message h5{
+    color: #06cf9c;
+    margin-bottom: 3px;
+    color: rgb(76, 180, 158);
+    font-size: 1rem;
+}
+.message-image-wrapper{
+    width: 200px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.message-image-wrapper img{
+    width: 100%;
+    height: auto;
+}
+.conversation-message p{
+    color: #111b21;
+    font-size: 16px;
+    text-align: left;
+}
+
+.conversation-message audio::-webkit-media-controls-panel {
+    background: #EBEDF0;
+}
+#my-audio-message::-webkit-media-controls-panel {
+    background: #1B74E4;
+}
+.conversation-message audio, #my-audio-message audio{
+    margin-bottom: -15px;
+}
+.conversation-message span{
+    color: #667781;
+    font-size: 11px;
+    position: absolute;
+    bottom: 5px;
+    right: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #################### Responsive style ###################### */
+@media only screen and (max-width: 1000px){
+    .conversation-message{
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 788px){
+    .conversation-message{
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 717px){
+    .conversation-message{
+        max-width: 95%;
+    }
+}
+
+@media only screen and (max-width:575px){
+    .conversation-message{
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width:370px){
+    .conversation-message{
+        max-width: 95%;
+    }
+}
